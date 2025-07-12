@@ -1,36 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>React Practice Labs</title>
-  <style>
-    body { font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; }
-    h1 { text-align: center; margin-bottom: 40px; }
-    .card {
-      padding: 20px;
-      border: 1px solid #ddd;
-      margin-bottom: 15px;
-      border-radius: 10px;
-      background-color: #f9f9f9;
-    }
-    a { text-decoration: none; color: #007bff; }
-  </style>
-</head>
-<body>
-  <h1>🚀 React Practice Labs</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Practice Labs</title>
+    <link rel="icon" href="./Day-1/public/react.svg" type="image/png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-  <div class="card">
-    <h2>Day 1 - Greeting + Counter</h2>
-    <a href="./day-1/index.html">👉 Open Project</a>
-  </div>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #fdfbfb, #ebedee);
+        color: #333;
+        min-height: 100vh;
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-  <div class="card">
-    <h2>Day 2 - Todo Pro App</h2>
-    <a href="./day-2/index.html">👉 Open Project</a>
-  </div>
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 40px;
+        text-align: center;
+      }
 
-  <div class="card">
-    <h2>More coming soon...</h2>
-  </div>
-</body>
+      .container {
+        width: 100%;
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        padding: 24px 32px;
+        transition: transform 0.2s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+      }
+
+      .card a {
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: 500;
+        color: #007bff;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s;
+      }
+
+      .card a:hover {
+        border-bottom: 1px solid #007bff;
+      }
+
+      footer {
+        margin-top: 50px;
+        text-align: center;
+        color: #888;
+        font-size: 0.9rem;
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🚀 React Practice Labs</h1>
+
+    <div class="container">
+      <div class="card">
+        <h2>Day 1 – Greeting + Counter</h2>
+        <a href="https://react-day-1.vercel.app" target="_blank">👉 View Project</a>
+      </div>
+
+      <div class="card">
+        <h2>Day 2 – Todo Pro App</h2>
+        <a href="https://react-day-2.vercel.app" target="_blank">👉 View Project</a>
+      </div>
+
+      <!-- More days coming soon -->
+      <div class="card">
+        <h2>More Coming Soon…</h2>
+      </div>
+    </div>
+
+    <footer>
+      Built with ❤️ by Haseeb Khan &nbsp;|&nbsp; React Practice
+    </footer>
+  </body>
 </html>
